@@ -62,6 +62,11 @@ nav ul li a:hover{
 	font-size: 14px;
 	font-weight: bold;
 }
+.index{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .index_card{
 	display: flex;
 	justify-content: space-between;
