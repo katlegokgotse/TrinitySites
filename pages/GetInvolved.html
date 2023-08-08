@@ -3,18 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Get Involved</title>
+	<link rel="stylesheet" type="text/css" href="./../style.css">
 	<link rel="icon" type="image/x-icon" href="trinity.ico">
-	<title>Contact Us</title>
+	
 </head>
 <body>
-	<div class="container">
+<div class="container">
 		<div class="navbar">
 			<img src="trinity_b_logo.png" class="logo">
 			<nav>
 				<ul id="menuList">
-					<li><a href="Index.html">Home</a></li>
-					<li><a href="AboutUs.html">About Us</a></li>
+					<li><a href="./../Index.html">Home</a></li>
+					<li><a href="./AboutUs.html">About Us</a></li>
 					<li><a href="OurWork.html">Our Work</a></li>
 					<li><a href="OurGallery.html">Our Gallery</a></li>
 					<li><a href="GetInvolved.html">Get Involved</a></li>
@@ -23,58 +24,56 @@
 			</nav>
 			<img src="menu.png" class="menu_icon" onclick="toggleMenu()">
 		</div>
-		<h1>Contact Us</h1>
-			<div class="contactBox">
-				<div class="contactLeft">
-					<iframe class ="maps_interface"
-		 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.087021130909!2d28.295600563287746!3d-25.767689073326792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e955e27866a7ecb%3A0x8e53a4b238575cd7!2sEastwood%20Office%20Park!5e0!3m2!1sen!2sza!4v1663141120488!5m2!1sen!2sza"
-		  					width="600" 
-								height="450" 
-								style="border:0;"
-							 allowfullscreen="" 
-							 loading="lazy" 
-		 					 referrerpolicy="no-referrer-when-downgrade">
-		</iframe>
+	<div class="contactBody">
+		<div class="contactBox">
+				<div class="gi_Left">
+					<div class="getInvolvedForms">
+						<h1>Register</h1>
+		<form action="https://formsubmit.co/el/letowo" method="POST">
+				<input class="input" type="text" name="firstName" placeholder="Enter Name" />
+				<input class="input" type="text" name="lastName" placeholder="Enter Surname" />
+				<input class="input" type="email" name="emailAddress" placeholder="Enter email address" />
+				<input type="checkbox" name="service" value="NewsLetter" /> Would you like subscribe to our blog post?
+				<div class="buttons">
+					<button id="submitSub" type="submit" onclick="openWebsite()">Subscribe</button>
+				</div>
+		</form>
+			
+			</div>
 		 		</div>
-				<div class="contactRight">
+				<div class="gi_Right">
+					<h1>JOIN Trinity Club</h1>
+					<p>As an Trinity member you get rewarded with what you love for doing what you love. Sign up today and receive immediate access to these benefits:</p>
+					<br>
 					<ul>
-						<li>Monday 08:00am - 17:00pm</li>
-						<li>Tuesday - Friday 08:30am - 18:00pm</li>
-						<li>Saturdays, Sundays and Public Holidays Closed</li>
+						<li>A 20% discount voucher for your next purchase</li>
+						<li>Get immediate access to all Membership benefits</li>
+						<li>Limited edition products and collections</li>
+						<li></li>
 					</ul>
-					<h1>Address</h1>
-					<p>23 Griffiths Road</p>
-					<p>Irene, Pretoria</p>
-					<p>0046</p>
-
+					<p>Join now and get rewarrded</p>
+					<p>It's time to unlock the best of Trinity</p>
+					<a href="membership.html">Read more about the free membership</a>
 				</div>
 				
 			</div>
-				<div class="contactBoxing">
-					<div class="contactBottom">
-						<h1>Become A Member</h1>
-						<a href="GetInvolved.html">Sign Up For Free</a>
-					</div>
-				</div>
-		</div>
-
-		
 	
-		
-	</div>
-	</div>
-<script src="variables.js">
+		</div>
+	
+</div>
+<script>
 		let menuList = document.getElementById("menuList"); 
 		menuList.style.maxHeight ="0px"; 
 
 			function toggleMenu(){
 				if(menuList.style.maxHeight == "0px"){
-				menuList.style.maxHeight ="250px"; 
+				menuList.style.maxHeight ="200px"; 
 				}else{
 				menuList.style.maxHeight ="0px"; 
 				}
 			}
 	</script>
+	<script src="getInvolved.js"></script>
 </body>
 <footer>
 	<div class="footer">
