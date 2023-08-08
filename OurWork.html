@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="trinity.ico">
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<img src="trinity_b_logo.png" class="logo">
+			<nav>
+				<ul id="menuList">
+					<li><a href="Index.html">Home</a></li>
+					<li><a href="AboutUs.html">About Us</a></li>
+					<li><a href="OurWork.html">Our Work</a></li>
+					<li><a href="OurGallery.html">Our Gallery</a></li>
+					<li><a href="GetInvolved.html">Get Involved</a></li>
+					<li><a href="ContactUs.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			<img src="menu.png" class="menu_icon" onclick="toggleMenu()">
+		</div>
+
+	<div class="card">
+		<div class="content">
+			 <h2>Web Hosting</h2>	
+				 <p>What is web hosting?</p>
+				 <p>Web hosting is a service that allows organizations and individuals to post a website or web page onto the Internet. A web host, or web hosting service provider. Websites are hosted, or stored our servers.</p>
+				 <a href="ContactUs.html">Contact Us</a>
+		</div>
+		<img src="ow_services.png"/>
+	</div>
+
+	<div class="card">
+		<div class="content">
+			 <h2>Website Creation</h2>	
+				 <p>Tools for web creation?</p>
+				 <p>.</p>
+				 <a href="ContactUs.html">Contact Us</a>
+		</div>
+		<img src="ow_we.png"/>
+	</div>
+
+	<div class="card">
+		<div class="content">
+			 <h2>Domain Hosting</h2>	
+				 <p>What is Domain hosting?</p>
+				 <p>.</p>
+				 <a href="ContactUs.html">Contact Us</a>
+		</div>
+		<img src="ow_domain.png"/>
+	</div>
+</div>
+<script>
+		let menuList = document.getElementById("menuList"); 
+		menuList.style.maxHeight ="0px"; 
+
+			function toggleMenu(){
+				if(menuList.style.maxHeight == "0px"){
+				menuList.style.maxHeight ="250px"; 
+				}else{
+				menuList.style.maxHeight ="0px"; 
+				}
+			}
+	</script>
+</body>
+<footer>
+	<div class="footer">
+		<div class="footer_img">
+			<img src="trinity_w_logo.png" width="100" height="100">
+			<img src="trinity_white_text.png" width="100" height="100">
+		</div>
+		<table width="400" cellpadding="50"cellspacing="10">
+			<div class="footer_lists">
+			<thead>
+				<th>Get Help</th>
+				<th>About Trinity</th>
+				<th>Follow Us</th>	
+				
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="">Order Status</a></td>
+					<td><a href="">News</a></td>
+					<td><a href="https://www.instagram.com/officialtrinitysites/"><img src="instagram.png" width="50" height="50"></a></td>
+				</tr>
+				<tr>
+					<td><a href="">Return Policy</a></td>
+					<td><a href="">Careers</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Contact Us</a></td>
+					<td><a href="">About us</a></td>
+					<td></td>
+				</tr>				
+			</tbody>
+		</div>
+		</table>
+	</div>
+</footer>
+</html>

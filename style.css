@@ -1,0 +1,505 @@
+*{
+	margin:  0; 
+	padding: 0; 
+	font-family: arial;
+}
+.our_projects{
+	color: #5B4F47;
+	text-align: center;
+	font-family: Arial;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+.container{
+	width: 100%;
+	min-height: 100vh;
+	padding-left: 5%;
+	padding-right: 5%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.googleForm{
+	margin-left: auto;
+	margin-right: auto;
+}
+.navbar{
+	width:  100%;
+	display: flex;
+	margin:  30px 0;
+}
+.menu_icon{
+	width: 5%;
+	cursor: pointer;
+	height: 10%;
+	display: none;
+}
+.logo{
+	width: 7%; 
+	height: 10%;
+	border-radius: 5px 5px 5px 5px;
+}
+nav{
+	flex: 1;
+	text-align: center;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 30px;
+}
+nav ul li a{
+	text-decoration: none;
+	background-color: white;
+	color:#5B4F47 ;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px;
+
+}
+nav ul li a:hover{
+	text-decoration: none;
+	color: bisque;
+	font-size: 14px;
+	font-weight: bold;
+}
+.index_card{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 100px;
+	width: 300px;
+	height: 350px;
+	background-color: #333;
+	border-radius: 10px;
+	outline: 1px solid rgba(0,0,0,0);
+	outline-offset: -8px;
+	position: relative;
+	overflow: hidden;
+}
+.index_card:hover .card-image{
+	transform: scale(1.15);
+}
+.card_title{
+	flex-basis: 40% ;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	font-size: 20px;
+	color: white;
+	margin-bottom: 25px;
+}
+.card_image{
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .7;
+	object-fit: cover;
+	transition: transform .75s;
+}
+.card_title a{
+	background-color: white;
+	padding: 5px;
+	text-decoration: none;
+	font-size: 16px;
+	border-radius: 5px 5px 5px 5px;
+	color: #1F1F23;
+	margin:  5px;
+	font-weight: bold;
+}
+@media only screen and (max-width:700px){
+	nav ul{
+		width: 100%;
+		height: 500px;
+		background-color:white ; 
+		position:  absolute;
+		top: 80px;
+		right: 0;
+		z-index: 2;
+	}
+	.index{
+		position: relative ;
+		display: grid;
+	}
+	.card{
+		position: relative;
+		width: auto;
+		max-width: 600px;
+		transition: 0.5s;
+		align-items: flex-start;
+	}
+	.card :hover{
+		height: 600px;
+	}
+	.card :hover img{
+		height: 350px;
+		left: 50%;
+	}
+	.card .content{
+		width: 100%;
+		left: 0%;
+		padding: 40px;
+	}
+	.main_card{
+		display: flex;
+	}
+	nav ul li{
+		display: block;
+		margin-top: 5px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+
+	}
+	nav ul li a{
+		color:  #1F1F23;
+	}
+	.menu_icon{
+		display: block;
+	}
+	#menuList{
+		overflow: hidden;
+		transition: 0.5s;
+	}
+	.card{
+		flex-direction: column-reverse;
+		margin: 0;
+		margin-top: 15px;
+		margin-bottom: 50px;
+	}
+}
+.footer{
+	text-align: center;
+	background-color:#5b4f47;
+	color: beige;
+
+}
+.footer .footer_img{
+	background-color:#5b4f47;
+}
+.footer .footer_lists{
+	align-items: center;
+	justify-content: space-between;
+	background-color:#5b4f47;
+	display: inline-flex;
+	justify-items: center;
+	padding: 5px;
+	
+}
+.footer .footer_lists p{
+	font-family: arial;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 5px;
+	margin-right: 10px;
+}
+.footer .footer_lists li{
+	list-style: none;
+	padding: 5px;
+	font-size: 15px;
+}
+.footer .footer_lists a{
+	text-decoration: none;
+	color: beige;
+	font-size: 15px;
+}
+tbody a{
+	padding: 10px 20px;
+	font-family: arial;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 20px;
+}
+table{
+	margin: 10px auto 10px auto; 
+}
+.contactImg{
+	width: 100%;
+}
+.contactBody{
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	list-style: none;
+}
+.contactCards{
+	width: 25%;
+	background-color: bisque;
+	padding: 25px;
+	margin: 40px;
+	display:  inline-block;
+	color: white;
+}
+button{
+	margin: 30px;
+	border: none;
+	background-color: black;
+	border-radius: 10px 10px 10px 10px;
+	color: white;
+	width: 100px;
+	height: 40px;
+	transition: 0.8s;
+	text-align: center;
+	font-family: ARIAL;
+	font-weight: bold;
+
+}
+button:hover{
+	color: white;
+	background-color: #5b4f47;
+	transition: 0.8s;
+	font-family: arial;
+	font-weight: bold;
+}
+.getInvolvedForms{
+	padding: 55px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.input{
+	margin: 10px auto 10px auto;
+	margin-top: 10px;
+	padding: 5px 5px 5px 30px;
+	border-radius: 5px 5px 5px 5px;
+	border: none;
+	border-style: none;
+	text-align: center;
+	background-position: 8px 9px;
+	display: block;
+	font-family: ARIAL;
+	background-color: #00000000;
+	font-size: 80%;
+	border: 1px solid #bdbdbd;
+	margin-bottom: 10px;
+	width: 350px;
+	height: 25px;
+}
+form:hover .input{
+	border-color: #5b4f47;
+
+}
+.gallery{
+	display: inline-table;
+}
+.gallery iframe{
+	width: 50%;
+	}
+	.input{
+	margin: 10px auto 10px auto;
+	margin-top: 10px;
+	padding: 5px 5px 5px 30px;
+	border-radius: 5px 5px 5px 5px;
+	border: none;
+	border-style: none;
+	text-align: center;
+	background-position: 8px 9px;
+	display: block;
+	font-family: ARIAL;
+	background-color: #00000000;
+	font-size: 80%;
+	border: 1px solid #bdbdbd;
+	margin-bottom: 10px;
+	width: 350px;
+	height: 25px;
+}
+.card{
+	position: relative;
+	width: 600px;
+	height: 350px;
+	margin: 20px;
+	display: inline-flex;
+	justify-content: flex-start;
+	border-radius: 20px;
+	align-items: center;
+	background-color: #5b4f47;
+	color: white;
+}
+.card img{
+	position: absolute;
+	bottom: 0;
+	left:  50%;
+	transform: translateX(-50%);
+	transition: 0.5s;
+	height: 400px;
+}
+.card:hover img{
+	left:  80% ;
+	height: 500px;
+}
+.card .content{
+	color: white;
+	position: relative;
+	width: 50%;
+	left: 20%;
+	padding: 20px 20px 20px 40px;
+}
+
+.card .content{
+	position: relative;
+	width: 50%;
+	left:  20%; 
+	transition: 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	padding: 20px 20px 20px 40px;
+}
+
+.card:hover .content{
+	left:  0%; 
+	opacity: 1;
+	visibility: visible;
+}
+.card .content h2{
+	color: white;
+	text-transform: uppercase;
+	font-size: 2.5em;
+	line-height: 1em;
+	font-family: arial;
+}
+.card .content p{
+	color: white;
+	font-family: arial;
+}
+.card .content a{
+	position: relative;
+	display: inline-block;
+	padding: 10px 20px;
+	font-family: arial;
+	font-weight: bold;
+	border: black;
+	background-color: white;
+	color: #5b4f47;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px 5px 5px 5px;
+	margin-top: 10px;
+}
+.index{
+	display: flex;
+}
+.contactBox{
+	background: white;
+	display: flex;
+}
+.contactLeft{
+	flex-basis:  50%;
+	width:  50%;
+	padding: 10px;
+	margin: 10px; 
+	color: #5b4f47;  
+}
+.contactRight{
+	margin: 10px;
+	flex-basis:  50%;
+	width: 50%;
+	padding: 40px;
+	background-color: beige;
+	color: #5b4f47;
+	text-align: center;
+}
+.contactRight ul li{
+	text-align: center;
+	list-style: none;
+}
+.contactBottom{
+	width: 100%;
+	margin: 10px; 
+}
+.contactBoxing{
+	background: beige;
+	display: flex;
+	padding: 80px;
+	margin: 10px; 
+}
+.contactBottom h1{
+	text-align: center;
+	font-size: 2.5em;
+}
+.contactBottom a{
+	margin-left: auto;
+	margin-right: auto; 
+	padding: 10px;
+	border-radius: 10px 10px 10px 10px;
+	text-align: center;
+	background-color:#5b4f47 ;
+	color: beige;
+	text-decoration-line: none;
+}
+
+.contactBottom a:hover{
+	background-color:beige;
+	color: #5b4f47;
+	text-decoration-line: none;
+}
+.gi_Left{
+	flex-basis:  60%; 
+	width: 50%;
+}
+.gi_Right{
+	flex-basis:  60%;
+	width: 50%;
+	padding: 40px;
+	color: #5b4f47;
+	text-align: center;
+}
+.gi_Right ul li{
+	text-align: center;
+	list-style: none;
+}
+.gi_Right a{
+	color: #1F1F2A;
+}
+.container h1{
+	font-size: 2.5em;
+	color:  #5b4f47;
+	text-align: center;
+}
+.contacterBox{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.aboutC{
+ 	text-align: center;
+	text-decoration: none;
+	background-color: #5b4f47  ;
+	color: white;
+	border-radius: 10px 10px 10px 10px;
+	padding: 15px 15px 15px 15px;
+	font-weight: bold;
+}
+
+.aboutC:hover{
+ text-align: center;
+	text-decoration: none;
+	background-color: #00000000  ;
+	color: #5b4f47;
+}
+.aboutUsContainer{
+	background: white;
+	display: flex;
+}
+.aboutUsLeft{
+	flex-basis:  50%;
+	width:  50%;
+	padding: 10px;
+	margin: 10px; 
+	color: #5b4f47;  
+}
+.aboutUsRight{
+	margin: 10px;
+	flex-basis:  50%;
+	width: 50%;
+	padding: 40px;
+	background-color: rgb(240, 240, 235);
+	color: #5b4f47;
+	text-align: center;
+}
+
+.aboutUsRight h2{
+	margin: 10px;
+	padding: 40px;
+	color: #5b4f47;
+	text-align: center;
+}

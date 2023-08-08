@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Us</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="trinity.ico">
+</head>
+<body>
+<div class="container">
+
+		<div class="navbar">
+			<img src="trinity_b_logo.png" class="logo">
+			<nav>
+				<ul id="menuList">
+					<li><a href="Index.html">Home</a></li>
+					<li><a href="AboutUs.html">About Us</a></li>
+					<li><a href="OurWork.html">Our Work</a></li>
+					<li><a href="OurGallery.html">Our Gallery</a></li>
+					<li><a href="GetInvolved.html">Get Involved</a></li>
+					<li><a href="ContactUs.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			<img src="menu.png" class="menu_icon" onclick="toggleMenu()">
+		</div>
+
+		<div class="aboutUsContainer">
+				<div class="aboutUsLeft">
+					<h3>Our technology allows everyone to get online with a personalized, professional web presence.
+						 Whether it’s your first time creating or you’re a long time expert, you’ll
+						  find the features and solutions you need to build a professional website with total creative freedom.
+							We provide a world-class platform. By means of empowering anyone to express themselves and build their
+							 online presence. Whether you’re an entrepreneur, designer, developer, musician, photographer or restaurant 
+							 owner, you’ll find specialized features to create a professional website and manage your business.
+					</h3>
+					</div>
+				<div class="aboutUsRight">
+					<h2>Lets help you create your vision Now</h2>
+					<br>
+					<a href="ContactUs.html" class="aboutC">Contact Us</a>
+				</div>
+	</div>
+
+</div>
+	<script>
+		let menuList = document.getElementById("menuList"); 
+		menuList.style.maxHeight ="0px"; 
+
+			function toggleMenu(){
+				if(menuList.style.maxHeight == "0px"){
+				menuList.style.maxHeight ="250px"; 
+				}else{
+				menuList.style.maxHeight ="0px"; 
+				}
+			}
+	</script>
+</body>
+<footer>
+	<div class="footer">
+		<div class="footer_img">
+			<img src="trinity_w_logo.png" width="100" height="100">
+			<img src="trinity_white_text.png" width="100" height="100">
+		</div>
+		<table width="400" cellpadding="50"cellspacing="10">
+			<div class="footer_lists">
+			<thead>
+				<th>Get Help</th>
+				<th>About Trinity</th>
+				<th>Follow Us</th>	
+				
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="">Order Status</a></td>
+					<td><a href="">News</a></td>
+					<td><a href="https://www.instagram.com/officialtrinitysites/"><img src="instagram.png" width="50" height="50"></a></td>
+				</tr>
+				<tr>
+					<td><a href="">Return Policy</a></td>
+					<td><a href="">Careers</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Contact Us</a></td>
+					<td><a href="">About us</a></td>
+					<td></td>
+				</tr>				
+			</tbody>
+		</div>
+		</table>
+	</div>
+</footer>
+</html>
